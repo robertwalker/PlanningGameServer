@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planning Game</title>
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let showConsole = #(showConsole)
+    let app = Elm.Main.init({
+      node: document.getElementById("root"),
+      flags: showConsole
+    });
+
+    // Create your WebSocket.
+    let socket = new WebSocket("ws://" + window.location.host + "/channel");
+
+    // When a command goes to the `sendMessage` port, we pass the message
+    // along to the WebSocket.
+    app.ports.sendMessage.subscribe((message) => {
+      console.log("---- Message from Elm ----")
+      console.log(message);
+      socket.send(message);
+    });
+
+    // When a message comes into our WebSocket, we pass the message along
+    // to the `messageReceiver` port.
+    socket.onmessage = (event) => {
+      console.log("---- Message from Server ----")
+      console.log(event.data);
+      app.ports.messageReceiver.send(event.data);
+    };
+  </script>
+</body>
+</html>

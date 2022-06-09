@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+
+# Xcode
+/.build
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+
+# Swift Package Manager
+/Packages
+.swiftpm
+
+# Elm
+elm-stuff/
+
+# Other
+db.sqlite
