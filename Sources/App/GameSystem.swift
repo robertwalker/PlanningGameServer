@@ -202,7 +202,7 @@ struct GameSystem {
     }
     
     func generateToken(activeTokens: [String]) throws -> String {
-        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        let alphabet = "BCDFGHJKLMNPQRSTVWXYZ0123456789"
         var gameToken = ""
         var retries = 10
         
