@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.0: 06/13/2022
+
+### Changed
+
+ad3f0fb Change game token alphabet
+
 ## Version 1.0.1: 06/13/2022
 
 ### Fixed
