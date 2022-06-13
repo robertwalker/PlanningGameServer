@@ -70,6 +70,9 @@ struct SocketEventController {
             }
             broadcastPlayerQuitGameEvents(clientID: clientID, gameID: gameID, player: player)
         }
+        catch GameStoreError.gameNotFound {
+            logger.debug("A player tried to quit after the game master ended the game")
+        }
         catch {
             logger.error("An unexpected error occurred handling player quit event: \(error)")
         }
