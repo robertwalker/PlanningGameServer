@@ -51,10 +51,11 @@ struct ChannelController {
                 )
                 controller.handlePlayerQuitEvent()
                 socketStore.removeClient(ws)
+                req.logger.info("Client closed socket")
             case .failure(let error):
                 req.logger.error("Failed to close socket: \(error.localizedDescription)")
             }
-            req.logger.info("Client closed socket \(ws)")
+            req.logger.info("Clients connected: \(socketStore.clients.count)")
         }
     }
     
