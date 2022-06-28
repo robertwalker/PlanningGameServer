@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.2: 06/28/2022
+
+### Changed
+
+d266776 Update package dependencies
+
 ## Version 1.1.1: 06/15/2022
 
 ### Changed
