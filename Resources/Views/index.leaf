@@ -17,7 +17,7 @@
     });
 
     // Create your WebSocket.
-    let socket = new WebSocket("ws://" + window.location.host + "/channel");
+    let socket = new WebSocket("#(wsProtocol)" + window.location.host + "/channel");
 
     // When a command goes to the `sendMessage` port, we pass the message
     // along to the WebSocket.

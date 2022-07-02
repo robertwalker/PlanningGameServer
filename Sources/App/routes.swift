@@ -6,7 +6,12 @@ func routes(_ app: Application) throws {
     let controller = ChannelController(socketStore: socketStore, gameStore: gameStore)
     
     app.get { req async throws -> View in
-        return try await req.view.render("index", ["showConsole": showConsole()])
+        struct RootContext: Encodable {
+            var showConsole: Bool
+            var wsProtocol: String
+        }
+        let context = RootContext(showConsole: showConsole(), wsProtocol: wsProtocol());
+        return try await req.view.render("index", context)
     }
     
     app.webSocket("channel") { req, ws in
@@ -19,6 +24,15 @@ func routes(_ app: Application) throws {
             return Environment.process.CONSOLE?.lowercased() == "true"
         default:
             return false
+        }
+    }
+    
+    func wsProtocol() -> String {
+        switch app.environment {
+        case .production:
+            return "wss://"
+        default:
+            return "ws://"
         }
     }
 }
