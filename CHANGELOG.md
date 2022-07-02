@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.2.0: 07/02/2022
+
+### Changed
+
+9c61fd4 Update gitignore
+f8cc485 Remove JavaScript console logging
+844d9c4 Set WebSocket protocol based on environment
+
 ## Version 1.1.2: 06/28/2022
 
 ### Changed
