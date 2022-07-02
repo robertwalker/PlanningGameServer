@@ -1,6 +1,9 @@
 # OS files
 .DS_Store
 
+# VSCode
+.vscode/
+
 # Xcode
 /.build
 /*.xcodeproj
