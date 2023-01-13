@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.2.1: 01/13/2023
+
+### Changed
+
+a009b10 Update package dependencies
+6811553 Build Docker image using developement environment
+
 ## Version 1.2.0: 07/02/2022
 
 ### Changed
