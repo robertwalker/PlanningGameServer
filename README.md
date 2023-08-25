@@ -14,6 +14,12 @@ The server can also be started with a terminal command on any supported OS platf
 swift run
 ```
 
+### Inital Setup (Xcode)
+
+Xcode requires a one-time setup for use with Vapor.
+
+* [Getting Started: Xcode](https://docs.vapor.codes/getting-started/xcode/)
+
 ---
 
 ## Frontend App
