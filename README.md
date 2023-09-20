@@ -46,7 +46,7 @@ elm make src/Main.elm --output=../Public/scripts/main.js
 
 ```zsh
 cd ./Frontend
-elm make src/Main.elm --optimized --output=../Public/scripts/main.js
+elm make src/Main.elm --optimize --output=../Public/scripts/main.js
 ```
 
 For details on optimizing the frontend app for production deployment see
