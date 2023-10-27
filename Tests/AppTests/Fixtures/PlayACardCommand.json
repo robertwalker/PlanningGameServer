@@ -1,5 +1,0 @@
-{
-  "clientID": "1ACFD06E-594C-4C48-A912-640CAD34F24A",
-  "eventName": "PlayACard",
-  "event": "{\"gameID\": \"3F315C02-B6DD-4B81-8D32-46AF6BF61CDD\",\"playerName\": \"Player One\",\"faceValue\": \"one\"}"
-}
