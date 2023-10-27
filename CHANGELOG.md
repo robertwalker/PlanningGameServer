@@ -1,5 +1,17 @@
 # Change Log
 
+## Version 1.2.4: 10/27/2023
+
+### Fixed
+
+ef8a903 Fix JSON fixtures
+
+## Version 1.2.3: 09/20/2023
+
+### Changed
+
+0bee2f9 Update elm test dependencies
+
 ## Version 1.2.2: 08/25/2023
 
 ### Changed
