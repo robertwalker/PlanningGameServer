@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.2.6: 07/30/2024
+
+### Changed
+
+35dd6f3 Update Package Dependencies
+
 ## Version 1.2.5: 01/23/2024
 
 ### Changed
