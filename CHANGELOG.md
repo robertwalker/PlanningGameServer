@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.2.7: 08/21/2024
+
+### Changed
+
+199cbfa Update Package Dependencies
+
 ## Version 1.2.6: 07/30/2024
 
 ### Changed
