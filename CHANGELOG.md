@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.2.8: 10/30/2024
+
+5ff9f7b Add @retroactive annotations
+
 ## Version 1.2.7: 08/21/2024
 
 ### Changed
