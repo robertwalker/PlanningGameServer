@@ -61,13 +61,13 @@ class SocketStore {
     }
 }
 
-extension WebSocket: Equatable {
+extension WebSocket: @retroactive Equatable {
     public static func == (lhs: WebSocket, rhs: WebSocket) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
-extension WebSocket: Hashable {
+extension WebSocket: @retroactive Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }
